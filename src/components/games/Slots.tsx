@@ -18,9 +18,9 @@ export const SlotsGame: React.FC<SlotsGameProps> = ({
 }) => {
     const [spinning, setSpinning] = useState<boolean>(false);
     const [reels, setReels] = useState<string[][]>([
-        ['🍒', '🍒', '🍒', '🍒', '🍒'],
-        ['🍒', '🍒', '🍒', '🍒', '🍒'],
-        ['🍒', '🍒', '🍒', '🍒', '🍒']
+        ['🍒', '🍒', '🍒'],
+        ['🍒', '🍒', '🍒'],
+        ['🍒', '🍒', '🍒']
     ]);
     const [reelPositions, setReelPositions] = useState<number[]>([0, 0, 0]);
     const [reelStopped, setReelStopped] = useState<boolean[]>([false, false, false]);
@@ -157,9 +157,9 @@ export const SlotsGame: React.FC<SlotsGameProps> = ({
 
     const resetSlots = (): void => {
         setReels([
-            ['🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒'],
-            ['🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒'],
-            ['🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒', '🍒']
+            ['🍒', '🍒', '🍒'],
+            ['🍒', '🍒', '🍒'],
+            ['🍒', '🍒', '🍒']
         ]);
         setReelPositions([0, 0, 0]);
         setReelStopped([false, false, false]);
